@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Text CoverFlow Plugin
- * Version: 1.0.42
+ * Version: 1.0.43
  * Description: A plugin to create a coverflow with Text content
  * Author: Sylvain L
  */
@@ -25,7 +25,7 @@ function text_coverflow_plugin_scripts() {
 
     wp_enqueue_script('text-coverflow-script', plugin_dir_url(__FILE__) . 'assets/text-coverflow-script.js', array('jquery'), false, true);
 
-    wp_enqueue_style('text-coverflow-style', plugin_dir_url(__FILE__) . 'assets/text-coverflow-style.css', array(), '1.0.42');
+    wp_enqueue_style('text-coverflow-style', plugin_dir_url(__FILE__) . 'assets/text-coverflow-style.css', array(), '1.0.43');
 }
 add_action('wp_enqueue_scripts', 'text_coverflow_plugin_scripts');
 
@@ -33,7 +33,7 @@ add_action('wp_enqueue_scripts', 'text_coverflow_plugin_scripts');
 // Enqueue admin styles
 function text_coverflow_plugin_admin_styles() {
     // Register and enqueue the admin CSS
-    wp_enqueue_style('text-coverflow-plugin-admin', plugin_dir_url(__FILE__) . 'assets/text-coverflow-plugin-admin.css', array(), '1.0.42');
+    wp_enqueue_style('text-coverflow-plugin-admin', plugin_dir_url(__FILE__) . 'assets/text-coverflow-plugin-admin.css', array(), '1.0.43');
 }
 add_action('admin_enqueue_scripts', 'text_coverflow_plugin_admin_styles');
 
