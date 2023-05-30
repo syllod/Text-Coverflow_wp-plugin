@@ -1,6 +1,6 @@
 /* CSS for Text CoverFlow Plugin Admin */
 
-#edit-slug-box{
+.post-type-coverflow #edit-slug-box{
 display: none !important;
 }
 
@@ -28,7 +28,7 @@ display: none !important;
 }
 
 /* Ajouter cette partie pour la séparation de 1px */
-.separator {
+.post-type-coverflow .separator {
     border-top: 1px solid #ddd;
     margin-top: 20px;
     margin-bottom: 20px;
