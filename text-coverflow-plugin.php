@@ -23,7 +23,7 @@ function text_coverflow_plugin_scripts() {
         wp_enqueue_script('swiper-bundle', 'https://unpkg.com/swiper@6.5.1/swiper-bundle.min.js', array('jquery'), false, true);
     }
 
-    wp_enqueue_script('text-coverflow-script', plugin_dir_url(__FILE__) . 'assets/text-coverflow-script.js', array('jquery'), false, true);
+    //wp_enqueue_script('text-coverflow-script', plugin_dir_url(__FILE__) . 'assets/text-coverflow-script.js', array('jquery'), false, true);
 
     wp_enqueue_style('text-coverflow-style', plugin_dir_url(__FILE__) . 'assets/text-coverflow-style.css', array(), '1.0.43');
 }
