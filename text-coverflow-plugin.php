@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Text CoverFlow Plugin
- * Version: 1.0.45
+ * Version: 1.0.46
  * Description: A plugin to create a coverflow with Text content
  * Author: Sylvain L
  */
@@ -28,7 +28,7 @@ function text_coverflow_plugin_scripts() {
 
     wp_enqueue_script('text-coverflow-script', plugin_dir_url(__FILE__) . 'assets/text-coverflow-script.js', array('jquery'), false, true);
 
-    wp_enqueue_style('text-coverflow-style', plugin_dir_url(__FILE__) . 'assets/text-coverflow-style.css', array(), '1.0.45');
+    wp_enqueue_style('text-coverflow-style', plugin_dir_url(__FILE__) . 'assets/text-coverflow-style.css', array(), '1.0.46');
 }
 add_action('wp_enqueue_scripts', 'text_coverflow_plugin_scripts');
 
@@ -37,7 +37,7 @@ add_action('wp_enqueue_scripts', 'text_coverflow_plugin_scripts');
 // Enqueue admin styles
 function text_coverflow_plugin_admin_styles() {
     // Register and enqueue the admin CSS
-    wp_enqueue_style('text-coverflow-plugin-admin', plugin_dir_url(__FILE__) . 'assets/text-coverflow-plugin-admin.css', array(), '1.0.45');
+    wp_enqueue_style('text-coverflow-plugin-admin', plugin_dir_url(__FILE__) . 'assets/text-coverflow-plugin-admin.css', array(), '1.0.46');
 }
 add_action('admin_enqueue_scripts', 'text_coverflow_plugin_admin_styles');
 
@@ -290,39 +290,41 @@ add_shortcode('text_coverflow', 'text_coverflow_plugin_shortcode');
 // Output the JavaScript code in the footer
 function text_coverflow_plugin_output_footer_scripts() {
     echo '<script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var swiper = new Swiper(".mySwiper", {
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                effect: "coverflow",
-                loop: true,
-                speed: 800,
-                autoplay: {
-                    delay: 3000,
-                },
-                centeredSlides: true,
-                slidesPerView: "auto",
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 140,
-                    depth: 300,
-                    modifier: 1,
-                    slideShadows: false,
-                }
-            });
-            
-            document.addEventListener("keydown", function(event) {
-                if (event.keyCode === 37) {
-                    // FlÃ¨che gauche pressÃ©e
-                    swiper.slidePrev();
-                } else if (event.keyCode === 39) {
-                    // FlÃ¨che droite pressÃ©e
-                    swiper.slideNext();
-                }
-            });
-        });
+    document.addEventListener("DOMContentLoaded", function() {
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        effect: "coverflow",
+        loop: true,
+        speed: 800,
+        autoplay: {
+            delay: 3000,
+        },
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 140,
+            depth: 300,
+            modifier: 1,
+            slideShadows: false,
+        }
+    });
+
+    document.addEventListener("keydown", function(event) {
+        if (event.keyCode === 37) {
+            // Flèche gauche pressée
+            swiper.slidePrev();
+        } else if (event.keyCode === 39) {
+            // Flèche droite pressée
+            swiper.slideNext();
+        }
+    });
+});
+
+
     </script>';
 }
 add_action('wp_footer', 'text_coverflow_plugin_output_footer_scripts');
