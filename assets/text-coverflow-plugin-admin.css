@@ -1,0 +1,42 @@
+/* CSS for Text CoverFlow Plugin Admin */
+
+#edit-slug-box{
+display: none !important;
+}
+
+/* Ajouter cette partie pour les labels et les champs */
+.coverflow_element {
+    margin-bottom: 20px;
+}
+
+.coverflow_element label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.coverflow_element input[type="text"],
+.coverflow_element textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.coverflow_element img{
+	width: 150px;
+}
+
+/* Ajouter cette partie pour la séparation de 1px */
+.separator {
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Ajouter cette partie pour l'affichage en colonne */
+@media (max-width: 600px) {
+    .coverflow_element {
+        display: block;
+    }
+}
