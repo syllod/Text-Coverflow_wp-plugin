@@ -8,6 +8,8 @@ Text Coverflow Plugin is a powerful tool that lets you easily create and display
 
 Please note that the current version of the plugin does not provide a built-in option to modify the CSS styles or the Swiper parameters. The coverflow's appearance, animation effects, and other visual properties have been coded according to specific personal needs. However, you can still customize the plugin's functionality through the available settings.
 
+If you are using the Elementor page builder and have placed the shortcode within an Elementor element, you can disable the plugin's dependency loading in the plugin settings. This allows you to leverage Elementor's built-in assets and optimize your website's performance.
+
 ## Features
 
 - Create stunning coverflows with customizable text elements.
@@ -43,4 +45,4 @@ Contributions to Text Coverflow Plugin are welcome! If you have any bug reports,
 
 ## License
 
-This project is licensed under the GNU General Public License v2 or later.
+This project is licensed under the GNU General Public License v2 or later. 
