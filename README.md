@@ -41,7 +41,7 @@ This plugin requires the following dependencies:
 
 ## Contributing
 
-Contributions to Text Coverflow Plugin are welcome! If you have any bug reports, feature requests, or code improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/syllod/text-coverflow-plugin).
+Contributions to Text Coverflow Plugin are welcome! If you have any bug reports, feature requests, or code improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/syllod/Text-Coverflow_wp-plugin).
 
 ## License
 
