@@ -3,7 +3,7 @@
  * Plugin Name: Text CoverFlow Plugin
  * Version: 1.0.46
  * Description: A plugin to create a coverflow with Text content
- * Author: Sylvain L
+ * Author: Sylvain L - Syllod
  */
 
 
