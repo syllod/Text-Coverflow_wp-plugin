@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name: Text CoverFlow Plugin
+ * Plugin URL: https://github.com/syllod/Text-Coverflow_wp-plugin
  * Version: 1.0.46
  * Description: A plugin to create a coverflow with Text content
  * Author: Sylvain L - Syllod
